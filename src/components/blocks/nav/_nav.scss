@@ -1,0 +1,23 @@
+.nav {
+  margin-right: auto;
+
+  ul {
+    display: flex;
+    align-items: center;
+
+    li {
+      &:nth-of-type(1) {
+        margin-right: 12.4rem;
+      }
+
+      a {
+        @include Montserrat-Regular();
+        font-weight: 200; /// !!!!
+        font-size: 2.6rem;
+        line-height: 3.2rem;
+        color: var(--black_1);
+      }
+    }
+  }
+
+}

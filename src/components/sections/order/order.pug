@@ -1,0 +1,17 @@
+section.order 
+  .container 
+    .order__inner 
+      h2 Заказать стирку ковров 
+      h3 Мы сами зaберeм и пpивезем ковер к вам домoй 
+        |
+        span бесплатно
+      p.address г. Москва и МО
+      form.form(name="order" method="post" action="")
+        h4.form__title Звоните и заказывайте качественную и недорогую чистку ковра только у нас!
+        p.form__subtitle Обещаем никакой рассылки и спама
+        .form__inputs
+          input(type="text" id="name" name="name" placeholder="Ваше имя" required).form__name
+          input(type="text" id="phone" name="phone" placeholder="Телефон" required).form__phone
+          input(type="submit" value="Отправить заявку").form__submit
+        input(type="checkbox" id="checkbox" name="checkbox" checked)
+        label(for="checkbox") Согласен (-на) с политикой конфиденциальности

@@ -1,0 +1,39 @@
+.advantages {
+  // min-height: 50.3rem;
+  padding: 15.4rem 0 0 0;
+  background: url("../img/icons/green-bg.svg") no-repeat center center;
+  background-size: 163.8rem 100%;
+
+  &__inner {
+    width: 100%;
+    padding-bottom: 6.5rem;
+
+    .advantages-list {
+      width: 100%;
+      padding-bottom: 7.9rem;
+      display: flex;
+      justify-content: space-between;
+
+      li {
+        max-width: 35.3rem;
+        display: flex;
+        flex-direction: column;
+
+        svg {
+          width: 6.2rem;
+          height: 7.9rem;
+          margin-bottom: 1.5rem;
+          fill: var(--white_1);
+        }
+
+        span {
+          display: block;
+          @include Montserrat-Regular();
+          font-size: 3rem;
+          line-height: 3.7rem;
+          color: var(--white_1);
+        }
+      }
+    }
+  }
+}

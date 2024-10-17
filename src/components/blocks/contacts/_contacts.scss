@@ -1,0 +1,28 @@
+.contacts {
+  display: flex;
+  align-items: center;
+
+  .phone,
+  .region {
+
+    a {
+      @include Montserrat-Regular();
+      font-weight: 200; /// !!!!
+      font-size: 2.6rem;
+      line-height: 3.2rem;
+      color: var(--black_1);
+    }
+  }
+
+  .phone {
+    margin-right: 7.4rem;
+  }
+
+  .region {
+
+    a {
+      color: var(--blue_2);
+    }
+  }
+  
+}

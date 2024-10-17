@@ -1,0 +1,121 @@
+.about {
+  // height: 665px;
+  padding: 3.3rem 0;
+  background: var(--black_1);
+  display: flex;
+  align-items: center;
+
+  &__inner {
+    // width: 60vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .about__text {
+      max-width: 58.2rem;
+      margin-right: 11.4rem;
+
+      h2 {
+        margin-bottom: 6.6rem;
+      }
+  
+      p {
+        font-family: 'Inter'; /// !!!!
+        font-style: normal;
+        font-weight: 300;
+        font-size: 3.4rem;
+        line-height: 130%;
+        color: var(--white_1);
+  
+        span {
+  
+          &:nth-of-type(1) {
+            font-weight: bold;
+          }
+  
+          &:nth-of-type(2) {
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+
+    .about__slider-wrapper {
+      position: relative;
+      transform: translateX(14rem);
+      width: 79.8rem;
+      height: 59.9rem;
+    }
+
+    .about__slider {
+      max-width: 79.8rem;
+      max-height: 59.9rem;
+      display: flex;
+      overflow: hidden;
+
+      .swiper-wrapper {
+        position: relative;
+        display: flex;
+
+        .swiper-slide {
+          max-width: 79.8rem;
+          max-height: 59.9rem;
+          
+          img {
+            border-radius: 5.2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.about__slider-next,
+.about__slider-prev {
+  position: absolute;
+  cursor: pointer;
+  width: 7.2rem;
+  height: 7.2rem;
+  background: var(--gray_3);
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.about__slider-next {
+  left: -9rem;
+}
+
+.about__slider-prev {
+  right: -9rem;
+}
+
+.about__slider-next,
+.about__slider-prev {
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 2.2rem;
+    width: 2.8rem;
+    height: 2.8rem;
+    border-top: 0.6rem solid var(--blue_3);
+    border-right: 0.6rem solid var(--blue_3);
+  }
+}
+
+.about__slider-next {
+
+  &::after {
+    right: 1.7rem;
+    transform: rotate(-132deg);
+  }
+}
+
+.about__slider-prev {
+
+  &::after {
+    right: 2.5rem;
+    transform: rotate(40deg);
+  }
+}

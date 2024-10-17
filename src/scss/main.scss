@@ -1,0 +1,53 @@
+// Переменные
+@import "./../scss/global/_variables";
+
+// Миксины
+@import "./../scss/global/_mixins";
+
+// Сброс дефолтных стилей браузера (дополнительный)
+@import "./../scss/global/_global";
+
+// Основные стили
+@import "./../scss/global/_base";
+
+// Размеры шрифтов повторяющихся элементов (h1, заголовки секций и т.д.)
+@import "./../scss/global/_typography";
+
+// Общие стили для кнопок
+@import "./../scss/global/_btns";
+
+// Общие стили для инпутов, чекбоксов и т.д.
+@import "./../scss/global/_inputs";
+
+// Общие стили для секций (паддинги и т.д.)
+@import "./../scss/global/_sections";
+
+// Плагины
+// @import "./../scss/libs/swiper-bundle.min"; // Слайдер
+// @import "./../scss/libs/swiper-bundle";
+
+// Хедер
+@import "./../components/sections/header/_header";
+
+// Футер
+@import "./../components/sections/footer/_footer";
+
+// Сайдбар
+// @import "./../components/sections/aside/_aside";
+
+// БЭМ-блоки
+@import "./../components/blocks/logo/_logo"; // Логотип
+@import "./../components/blocks/nav/_nav"; // Меню
+@import "./../components/blocks/contacts/_contacts"; // Контакты
+// @import "./../components/blocks/socials/_socials"; // Соцсети
+// @import "./../components/blocks/burger/_burger"; // Бургер
+
+// Секции
+@import "./../components/sections/first/_first"; // Первая секция
+@import "./../components/sections/advantages/_advantages"; // Вторая секция
+@import "./../components/sections/process/_process"; // Третья секция
+@import "./../components/sections/price/_price"; // Стоимость
+@import "./../components/sections/order/_order"; // Заказать стирку ковров
+@import "./../components/sections/technologies/_technologies"; // Средства, которые мы используем 
+@import "./../components/sections/about/_about"; // О нас
+@import "./../components/sections/reviews/_reviews"; // Отзывы наших клиентов

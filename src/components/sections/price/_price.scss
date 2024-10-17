@@ -1,0 +1,107 @@
+.price {
+  position: relative;
+  // padding: 8rem 0 7.9rem 0;
+  padding: 2rem 0 79rem 0;
+  // background: url("../img/icons/price-bg.svg") no-repeat center center;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: -59rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("../img/icons/price-bg.svg") no-repeat 100% -6%;
+    background-size: 100% 100%;
+  }
+
+  &__inner {
+    position: relative;
+    width: 100%;
+
+    h2 {
+      margin-bottom: 0.6rem;
+    }
+
+    .price__subtitle {
+      margin-bottom: 11.9rem;
+      font-family: 'Montserrat'; /// !!!
+      font-style: normal;
+      font-weight: 700;
+      font-size: 17.8rem;
+      line-height: 21.7rem;
+      color: var(--white_1);
+    }
+
+    &-bottom {
+      display: flex;
+      justify-content: space-between;
+
+      .price__data {
+
+        li {
+          display: flex;
+          align-items: center;
+
+          &:not(:last-of-type) {
+            margin-bottom: 7.6rem;
+          }
+
+          &:nth-of-type(1) {
+
+            img  {
+              width: 6.5rem;
+              height: 7.6rem;
+            }
+          }
+
+          &:nth-of-type(2) {
+
+            img {
+              height: 11.4rem;
+              width: 6rem;
+            }
+          }
+
+          .price__data-text {
+            max-width: 58rem;
+            margin-left: 3.4rem;
+            font-family: 'Montserrat'; /// !!!
+            font-style: normal;
+            font-weight: 200;
+            font-size: 3rem;
+            line-height: 3.7rem;
+            color: var(--white_1);
+
+            span {
+              text-transform: uppercase;
+            }
+          }
+        }
+      }
+
+      .price__order {
+        max-width: 38.2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-end;
+
+        &-text {
+          // display: block;
+          margin-bottom: 1.2rem;
+          font-family: 'Montserrat'; /// !!!
+          font-style: normal;
+          font-weight: 400;
+          font-size: 1.5rem;
+          line-height: 1.8rem;
+          color: var(--white_1);
+        }
+        
+        .price-btn {
+          padding: 2.5rem 8.9rem;
+        }
+      }
+    }
+  }
+}

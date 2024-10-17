@@ -1,0 +1,24 @@
+h1 {
+  margin-bottom: 3.6rem;
+  @include Inter-Black();
+  font-size: 6.4rem;
+  line-height: 7.7rem;
+  color: var(--blue_2);
+  text-transform: uppercase;
+}
+
+h2 {
+  @include Montserrat-Regular();
+  font-weight: 200; //// !!!
+  font-size: 7.8rem;
+  line-height: 9.5rem;
+  color: var(--white_1);
+}
+
+h3 {
+  @include Montserrat-Regular();
+  font-weight: 300; /// !!!
+  font-size: 2rem;
+  line-height: 2.4rem;
+  color: var(--white_1);
+}

@@ -1,0 +1,135 @@
+.process {
+  position: relative;
+  padding-bottom: 22rem;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: -9.5rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("../img/icons/blue-bg.svg") no-repeat center center;
+    background-size: 173rem 100%;
+  }
+
+  &__inner {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 10rem;
+      right: -2rem;
+      width: 24.6rem;
+      height: 23.5rem;
+      background: url("../img/icons/star_5.svg") no-repeat center center;
+    }
+
+    .process-img {
+      position: absolute;
+      right: 0;
+      bottom: 1rem;
+
+      &__man {
+        position: absolute;
+        right: -25.8rem;
+        bottom: 6rem;
+        width: 56.6rem;
+        height: 71rem;
+      }
+
+      &__quote {
+        position: absolute;
+        z-index: 100;
+        right: 17rem;
+        bottom: 2rem;
+        width: 50rem;
+        min-height: 15.7rem;
+        padding: 5rem 8rem 5rem 10rem;
+        background: #E7F5FF;
+        border-radius: 1.9rem;
+
+        &::after {
+          position: absolute;
+          content: "";
+          right: -2.7rem;
+          top: -5.5rem;
+          width: 12.4rem;
+          height: 9rem;
+          background: url("../img/icons/quote-corner.svg") no-repeat center center;
+        }
+
+        p {
+          font-family: "Montserrat"; /// !!!
+          font-style: normal;
+          font-weight: 200;
+          font-size: 2rem;
+          line-height: 2.4rem;
+          color: var(--black_2);
+        }
+      }
+    }
+
+    h2 {
+      margin-bottom: 0.8rem;
+    }
+
+    span {
+      text-transform: uppercase;
+    }
+
+    h3 {
+      max-width: 57rem;
+      margin-bottom: 2.7rem;
+    }
+
+    .process-list {
+      margin-bottom: 8rem;
+      counter-reset: process 0;
+
+      li {
+        position: relative;
+        max-width: 73.2rem;
+
+        &:not(:last-of-type) {
+          margin-bottom: 7.6rem;
+        }
+
+        &::before {
+          position: absolute;
+          content: counter(process); 
+          top: 50%;
+          left: -8rem;
+          transform: translateY(-50%);
+          counter-increment: process; 
+          font-family: 'Montserrat'; /// !!!
+          font-style: italic;
+          font-weight: 500;
+          font-size: 12rem;
+          line-height: 14.6rem;
+          color: var(--white_1);
+        }
+
+        h4,
+        p {
+          font-size: 2.2rem;
+          line-height: 2.7rem;
+          color: var(--white_1);
+        }
+
+        h4 {
+          font-family: 'Montserrat'; /// !!!!
+          font-style: normal;
+          font-weight: 600;
+        }
+
+        p {
+          font-family: 'Montserrat'; /// !!!!
+          font-style: normal;
+          font-weight: 200;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,80 @@
+.footer {
+  padding: 16.8rem 0 15rem 0;
+  background: var(--blue_3);
+
+  &__inner {
+    width: 100%;
+
+    &-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8.6rem;
+
+      h3 {
+        margin-bottom: 2.5rem;
+        font-family: 'Montserrat'; /// !!!
+        font-style: normal;
+        font-weight: 200;
+        font-size: 5rem;
+        line-height: 6.1rem;
+        color: var(--white_1);
+      }
+
+      .footer__image {
+
+      }
+
+      .footer__contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        a {
+          display: block;
+          margin-bottom: 2.5rem;
+          font-family: 'Montserrat'; /// !!!
+          font-style: normal;
+          font-weight: 200;
+          font-size: 3.8rem;
+          line-height: 4.6rem;
+          color: var(--white_1);
+        }
+
+        .whatsapp {
+          position: relative;
+          display: flex;
+          align-items: center;
+          margin-bottom: 4.8rem;
+
+          a {
+            margin-bottom: 0;
+            text-decoration-line: underline;
+            color: var(--green_1);
+          }
+
+          &::before {
+            position: absolute;
+            content: "";
+            left: -5rem;
+            width: 4.6rem;
+            height: 4.9rem;
+            background: url("../img/icons/whatsapp.svg") no-repeat center center;
+          }
+        }
+
+        .footer-btn {
+          padding: 1.95rem 6.16rem;
+        }
+      }
+    }
+
+    &-bottom {
+      @include Montserrat-Medium();
+      font-size: 2.4rem;
+      line-height: 2.9rem;
+      color: var(--white_1);
+      opacity: 0.33;
+    }
+  }
+}

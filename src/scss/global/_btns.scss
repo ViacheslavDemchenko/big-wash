@@ -1,0 +1,12 @@
+.btn {
+  padding: 1.45rem 3.96rem;
+  @include Montserrat-Regular();
+  font-weight: 200; ///!!!!
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+  color: var(--black_1);
+  background: var(--green_1);
+  border-radius: 1.4rem;
+  border: none;
+  outline: none;
+}
