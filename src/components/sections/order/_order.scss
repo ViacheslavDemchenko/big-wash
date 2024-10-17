@@ -11,17 +11,13 @@
 
     h3 {
       margin-bottom: 0.9rem;
-      font-family: 'Montserrat'; /// !!!
-      font-style: normal;
-      font-weight: 200;
+      @include Montserrat-ExtraLight();
       font-size: 2.6rem;
       line-height: 3.2rem;
       color: var(--black_3);
 
       span {
-        font-family: 'Montserrat'; /// !!!!
-        font-style: normal;
-        font-weight: 200;
+        @include Montserrat-ExtraLight();
         font-size: 2.6rem;
         line-height: 3.2rem;
         color: var(--blue_2);
@@ -31,9 +27,7 @@
 
     .address {
       margin-bottom: 5.3rem;
-      font-family: 'Montserrat'; /// !!!
-      font-style: normal;
-      font-weight: 200;
+      @include Montserrat-ExtraLight();
       font-size: 2.2rem;
       line-height: 2.7rem;
       color: var(--gray_2);
@@ -45,11 +39,13 @@
       background: var(--blue_2);
       border-radius: 5rem;
 
+      &__title,
+      &__subtitle {
+        @include Montserrat-ExtraLight();
+      }
+
       &__title {
         margin-bottom: 1.2rem;
-        font-family: 'Montserrat'; /// !!!
-        font-style: normal;
-        font-weight: 200;
         font-size: 4.2rem;
         line-height: 5.2rem;
         color: var(--white_1);
@@ -57,9 +53,6 @@
 
       &__subtitle {
         margin-bottom: 5rem;
-        font-family: 'Montserrat'; /// !!!
-        font-style: normal;
-        font-weight: 200;
         font-size: 1.6rem;
         line-height: 2rem;
         color: var(--white_1);
@@ -84,9 +77,7 @@
 
       input::placeholder,
       input[type=submit] {
-        font-family: 'Archivo Black'; /// !!!
-        font-style: normal;
-        font-weight: 400;
+        @include Montserrat-Regular();
         font-size: 2.2rem;
         line-height: 2.4rem;
         color: var(--white_1);
@@ -135,9 +126,7 @@
 
       label {
         margin-left: 0.5rem;
-        font-family: 'Montserrat'; /// !!!
-        font-style: normal;
-        font-weight: 300;
+        @include Montserrat-Light();
         font-size: 1.8rem;
         line-height: 2.2rem;
         color: var(--white_1);

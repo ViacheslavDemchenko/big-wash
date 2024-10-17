@@ -1,8 +1,32 @@
 /* FONTS */
 
+/* Roboto */
+
+@mixin Roboto-Regular ($font-family: 'Roboto-Regular', $font-weight: 400, $font-style: normal, $font-display: swap) {
+  font-family: $font-family;
+  font-weight: $font-weight;
+  font-style: $font-style;
+  font-display: $font-display;
+}
+
+
+@mixin Roboto-Medium ($font-family: 'Roboto-Medium', $font-weight: 500, $font-style: normal, $font-display: swap) {
+  font-family: $font-family;
+  font-weight: $font-weight;
+  font-style: $font-style;
+  font-display: $font-display;
+}
+
 /* Montserrat */
 
-@mixin Montserrat-Medium ($font-family: 'Montserrat-Medium', $font-weight: 500, $font-style: normal, $font-display: swap) {
+@mixin Montserrat-ExtraLight ($font-family: 'Montserrat-ExtraLight', $font-weight: 200, $font-style: normal, $font-display: swap) {
+  font-family: $font-family;
+  font-weight: $font-weight;
+  font-style: $font-style;
+  font-display: $font-display;
+}
+
+@mixin Montserrat-Light ($font-family: 'Montserrat-Light', $font-weight: 300, $font-style: normal, $font-display: swap) {
   font-family: $font-family;
   font-weight: $font-weight;
   font-style: $font-style;
@@ -16,30 +40,37 @@
   font-display: $font-display;
 }
 
+@mixin Montserrat-Medium ($font-family: 'Montserrat-Medium', $font-weight: 500, $font-style: normal, $font-display: swap) {
+  font-family: $font-family;
+  font-weight: $font-weight;
+  font-style: $font-style;
+  font-display: $font-display;
+}
+
+@mixin Montserrat-Medium-Italic ($font-family: 'Montserrat-MediumItalic', $font-weight: 500, $font-style: italic, $font-display: swap) {
+  font-family: $font-family;
+  font-weight: $font-weight;
+  font-style: $font-style;
+  font-display: $font-display;
+}
+
+@mixin Montserrat-SemiBold ($font-family: 'Montserrat-SemiBold', $font-weight: 600, $font-style: normal, $font-display: swap) {
+  font-family: $font-family;
+  font-weight: $font-weight;
+  font-style: $font-style;
+  font-display: $font-display;
+}
+
+@mixin Montserrat-Bold ($font-family: 'Montserrat-Bold', $font-weight: 700, $font-style: normal, $font-display: swap) {
+  font-family: $font-family;
+  font-weight: $font-weight;
+  font-style: $font-style;
+  font-display: $font-display;
+}
+
 /* Inter */
 
 @mixin Inter-Regular ($font-family: 'Inter-Regular', $font-weight: 400, $font-style: normal, $font-display: swap) {
-  font-family: $font-family;
-  font-weight: $font-weight;
-  font-style: $font-style;
-  font-display: $font-display;
-}
-
-@mixin Inter-Medium ($font-family: 'Inter-Medium', $font-weight: 500, $font-style: normal, $font-display: swap) {
-  font-family: $font-family;
-  font-weight: $font-weight;
-  font-style: $font-style;
-  font-display: $font-display;
-}
-
-@mixin Inter-SemiBold ($font-family: 'Inter-SemiBold', $font-weight: 600, $font-style: normal, $font-display: swap) {
-  font-family: $font-family;
-  font-weight: $font-weight;
-  font-style: $font-style;
-  font-display: $font-display;
-}
-
-@mixin Inter-SemiBold ($font-family: 'Inter-Bold', $font-weight: 700, $font-style: normal, $font-display: swap) {
   font-family: $font-family;
   font-weight: $font-weight;
   font-style: $font-style;

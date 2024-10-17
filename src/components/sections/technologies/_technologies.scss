@@ -8,9 +8,7 @@
       color: var(--black_4);
 
       span {
-        font-family: 'Montserrat'; /// !!!
-        font-style: normal;
-        font-weight: 200;
+        @include Montserrat-ExtraLight();
         font-size: 5.4rem;
         line-height: 6.6rem;
         color: var(--black_4);
@@ -45,9 +43,7 @@
         }
 
         span {
-          font-family: 'Montserrat'; /// !!!
-          font-style: normal;
-          font-weight: 200;
+          @include Montserrat-ExtraLight();
           font-size: 2.2rem;
           line-height: 2.7rem;
           color: var(--black_4);

@@ -18,6 +18,8 @@
 
 /* FONTS */
 
+/* Roboto */
+
 /* Montserrat */
 
 /* Inter */
@@ -95,7 +97,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  font-family: "Inter-Regular", "Arial", "Tahoma", sans-serif;
+  font-family: "Montserrat-Regular", "Arial", "Tahoma", sans-serif;
   font-weight: 400;
   font-style: normal;
   text-rendering: optimizelegibility;
@@ -144,7 +146,6 @@ h1 {
   font-family: "Inter-Black";
   font-weight: 900;
   font-style: normal;
-  font-display: swap;
   font-size: 6.4rem;
   line-height: 7.7rem;
   color: var(--blue_2);
@@ -152,22 +153,18 @@ h1 {
 }
 
 h2 {
-  font-family: "Montserrat-Regular";
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
+  font-family: "Montserrat-ExtraLight";
   font-weight: 200;
+  font-style: normal;
   font-size: 7.8rem;
   line-height: 9.5rem;
   color: var(--white_1);
 }
 
 h3 {
-  font-family: "Montserrat-Regular";
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
+  font-family: "Montserrat-Light";
   font-weight: 300;
+  font-style: normal;
   font-size: 2rem;
   line-height: 2.4rem;
   color: var(--white_1);
@@ -175,11 +172,10 @@ h3 {
 
 .btn {
   padding: 1.45rem 3.96rem;
-  font-family: "Montserrat-Regular";
-  font-weight: 400;
+  font-family: "Montserrat-ExtraLight";
+  font-weight: 200;
   font-style: normal;
   font-display: swap;
-  font-weight: 200;
   font-size: 2.4rem;
   line-height: 2.9rem;
   color: var(--black_1);
@@ -219,9 +215,10 @@ h3 {
 
 .footer__inner-top h3 {
   margin-bottom: 2.5rem;
-  font-family: "Montserrat";
-  font-style: normal;
+  font-family: "Montserrat-ExtraLight";
   font-weight: 200;
+  font-style: normal;
+  font-display: swap;
   font-size: 5rem;
   line-height: 6.1rem;
   color: var(--white_1);
@@ -236,9 +233,10 @@ h3 {
 .footer__inner-top .footer__contacts a {
   display: block;
   margin-bottom: 2.5rem;
-  font-family: "Montserrat";
-  font-style: normal;
+  font-family: "Montserrat-ExtraLight";
   font-weight: 200;
+  font-style: normal;
+  font-display: swap;
   font-size: 3.8rem;
   line-height: 4.6rem;
   color: var(--white_1);
@@ -299,8 +297,8 @@ h3 {
 }
 
 .nav ul li a {
-  font-family: "Montserrat-Regular";
-  font-weight: 400;
+  font-family: "Montserrat-ExtraLight";
+  font-weight: 200;
   font-style: normal;
   font-display: swap;
   font-weight: 200;
@@ -316,8 +314,8 @@ h3 {
 
 .contacts .phone a,
 .contacts .region a {
-  font-family: "Montserrat-Regular";
-  font-weight: 400;
+  font-family: "Montserrat-ExtraLight";
+  font-weight: 200;
   font-style: normal;
   font-display: swap;
   font-weight: 200;
@@ -495,7 +493,7 @@ h3 {
   bottom: 2rem;
   width: 50rem;
   min-height: 15.7rem;
-  padding: 5rem 8rem 5rem 10rem;
+  padding: 5rem 6rem 5rem 6rem;
   background: #E7F5FF;
   border-radius: 1.9rem;
 }
@@ -511,9 +509,10 @@ h3 {
 }
 
 .process__inner .process-img__quote p {
-  font-family: "Montserrat";
-  font-style: normal;
+  font-family: "Montserrat-ExtraLight";
   font-weight: 200;
+  font-style: normal;
+  font-display: swap;
   font-size: 2rem;
   line-height: 2.4rem;
   color: var(--black_2);
@@ -550,12 +549,13 @@ h3 {
   position: absolute;
   content: counter(process);
   top: 50%;
-  left: -8rem;
+  left: -10rem;
   transform: translateY(-50%);
   counter-increment: process;
-  font-family: "Montserrat";
-  font-style: italic;
+  font-family: "Montserrat-MediumItalic";
   font-weight: 500;
+  font-style: italic;
+  font-display: swap;
   font-size: 12rem;
   line-height: 14.6rem;
   color: var(--white_1);
@@ -569,15 +569,17 @@ h3 {
 }
 
 .process__inner .process-list li h4 {
-  font-family: "Montserrat";
-  font-style: normal;
+  font-family: "Montserrat-SemiBold";
   font-weight: 600;
+  font-style: normal;
+  font-display: swap;
 }
 
 .process__inner .process-list li p {
-  font-family: "Montserrat";
-  font-style: normal;
+  font-family: "Montserrat-ExtraLight";
   font-weight: 200;
+  font-style: normal;
+  font-display: swap;
 }
 
 .price {
@@ -607,9 +609,10 @@ h3 {
 
 .price__inner .price__subtitle {
   margin-bottom: 11.9rem;
-  font-family: "Montserrat";
-  font-style: normal;
+  font-family: "Montserrat-Bold";
   font-weight: 700;
+  font-style: normal;
+  font-display: swap;
   font-size: 17.8rem;
   line-height: 21.7rem;
   color: var(--white_1);
@@ -642,9 +645,10 @@ h3 {
 .price__inner-bottom .price__data li .price__data-text {
   max-width: 58rem;
   margin-left: 3.4rem;
-  font-family: "Montserrat";
-  font-style: normal;
+  font-family: "Montserrat-ExtraLight";
   font-weight: 200;
+  font-style: normal;
+  font-display: swap;
   font-size: 3rem;
   line-height: 3.7rem;
   color: var(--white_1);
@@ -664,9 +668,10 @@ h3 {
 
 .price__inner-bottom .price__order-text {
   margin-bottom: 1.2rem;
-  font-family: "Montserrat";
-  font-style: normal;
+  font-family: "Montserrat-Regular";
   font-weight: 400;
+  font-style: normal;
+  font-display: swap;
   font-size: 1.5rem;
   line-height: 1.8rem;
   color: var(--white_1);
@@ -688,18 +693,20 @@ h3 {
 
 .order__inner h3 {
   margin-bottom: 0.9rem;
-  font-family: "Montserrat";
-  font-style: normal;
+  font-family: "Montserrat-ExtraLight";
   font-weight: 200;
+  font-style: normal;
+  font-display: swap;
   font-size: 2.6rem;
   line-height: 3.2rem;
   color: var(--black_3);
 }
 
 .order__inner h3 span {
-  font-family: "Montserrat";
-  font-style: normal;
+  font-family: "Montserrat-ExtraLight";
   font-weight: 200;
+  font-style: normal;
+  font-display: swap;
   font-size: 2.6rem;
   line-height: 3.2rem;
   color: var(--blue_2);
@@ -708,9 +715,10 @@ h3 {
 
 .order__inner .address {
   margin-bottom: 5.3rem;
-  font-family: "Montserrat";
-  font-style: normal;
+  font-family: "Montserrat-ExtraLight";
   font-weight: 200;
+  font-style: normal;
+  font-display: swap;
   font-size: 2.2rem;
   line-height: 2.7rem;
   color: var(--gray_2);
@@ -723,11 +731,16 @@ h3 {
   border-radius: 5rem;
 }
 
+.order__inner .form__title,
+.order__inner .form__subtitle {
+  font-family: "Montserrat-ExtraLight";
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
 .order__inner .form__title {
   margin-bottom: 1.2rem;
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 200;
   font-size: 4.2rem;
   line-height: 5.2rem;
   color: var(--white_1);
@@ -735,9 +748,6 @@ h3 {
 
 .order__inner .form__subtitle {
   margin-bottom: 5rem;
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 200;
   font-size: 1.6rem;
   line-height: 2rem;
   color: var(--white_1);
@@ -761,9 +771,10 @@ h3 {
 }
 
 .order__inner .form input:-ms-input-placeholder {
-  font-family: "Archivo Black";
-  font-style: normal;
+  font-family: "Montserrat-Regular";
   font-weight: 400;
+  font-style: normal;
+  font-display: swap;
   font-size: 2.2rem;
   line-height: 2.4rem;
   color: var(--white_1);
@@ -771,9 +782,10 @@ h3 {
 
 .order__inner .form input::placeholder,
 .order__inner .form input[type=submit] {
-  font-family: "Archivo Black";
-  font-style: normal;
+  font-family: "Montserrat-Regular";
   font-weight: 400;
+  font-style: normal;
+  font-display: swap;
   font-size: 2.2rem;
   line-height: 2.4rem;
   color: var(--white_1);
@@ -823,9 +835,10 @@ h3 {
 
 .order__inner .form label {
   margin-left: 0.5rem;
-  font-family: "Montserrat";
-  font-style: normal;
+  font-family: "Montserrat-Light";
   font-weight: 300;
+  font-style: normal;
+  font-display: swap;
   font-size: 1.8rem;
   line-height: 2.2rem;
   color: var(--white_1);
@@ -856,9 +869,10 @@ h3 {
 }
 
 .technologies__inner h2 span {
-  font-family: "Montserrat";
-  font-style: normal;
+  font-family: "Montserrat-ExtraLight";
   font-weight: 200;
+  font-style: normal;
+  font-display: swap;
   font-size: 5.4rem;
   line-height: 6.6rem;
   color: var(--black_4);
@@ -894,9 +908,10 @@ h3 {
 }
 
 .technologies__inner .tools-list .tools__item span {
-  font-family: "Montserrat";
-  font-style: normal;
+  font-family: "Montserrat-ExtraLight";
   font-weight: 200;
+  font-style: normal;
+  font-display: swap;
   font-size: 2.2rem;
   line-height: 2.7rem;
   color: var(--black_4);
@@ -925,9 +940,10 @@ h3 {
 }
 
 .about__inner .about__text p {
-  font-family: "Inter";
-  font-style: normal;
+  font-family: "Montserrat-Light";
   font-weight: 300;
+  font-style: normal;
+  font-display: swap;
   font-size: 3.4rem;
   line-height: 130%;
   color: var(--white_1);
@@ -1058,9 +1074,10 @@ h3 {
 }
 
 .reviews__inner .reviews__slider .swiper-wrapper .swiper-slide__top .swiper-slide__name {
-  font-family: "Roboto";
-  font-style: normal;
+  font-family: "Roboto-Medium";
   font-weight: 500;
+  font-style: normal;
+  font-display: swap;
   font-size: 2.2rem;
   line-height: 2.6rem;
   color: var(--gray_4);
@@ -1081,9 +1098,10 @@ h3 {
 }
 
 .reviews__inner .reviews__slider .swiper-wrapper .swiper-slide .swiper-slide__bottom {
-  font-family: "Roboto";
-  font-style: normal;
+  font-family: "Roboto-Regular";
   font-weight: 400;
+  font-style: normal;
+  font-display: swap;
   font-size: 2rem;
   line-height: 2.3rem;
   color: var(--gray_4);

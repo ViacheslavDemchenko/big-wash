@@ -6,8 +6,8 @@
   .region {
 
     a {
-      @include Montserrat-Regular();
-      font-weight: 200; /// !!!!
+      @include Montserrat-ExtraLight();
+      font-weight: 200;
       font-size: 2.6rem;
       line-height: 3.2rem;
       color: var(--black_1);

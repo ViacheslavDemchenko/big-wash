@@ -1,12 +1,10 @@
 .about {
-  // height: 665px;
   padding: 3.3rem 0;
   background: var(--black_1);
   display: flex;
   align-items: center;
 
   &__inner {
-    // width: 60vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,9 +18,7 @@
       }
   
       p {
-        font-family: 'Inter'; /// !!!!
-        font-style: normal;
-        font-weight: 300;
+        @include Montserrat-Light();
         font-size: 3.4rem;
         line-height: 130%;
         color: var(--white_1);
