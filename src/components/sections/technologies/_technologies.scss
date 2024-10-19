@@ -1,52 +1,142 @@
 .technologies {
-  padding-top: 6.5rem;
+  padding: 1.3rem 0 5.6rem 0;
+
+  @media (min-width: 1440px) {
+    padding-top: 6.5rem;
+  }
 
   &__inner {
 
+    @media (min-width: 560px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
     h2 {    
-      margin-bottom: 10rem;
+      margin-bottom: 3rem;
       color: var(--black_4);
+
+      @media (min-width: 560px) {
+        align-self: flex-start;
+      }
+
+      @media (min-width: 1440px) {
+        margin-bottom: 10rem;
+      }
 
       span {
         @include Montserrat-ExtraLight();
-        font-size: 5.4rem;
-        line-height: 6.6rem;
+        font-size: 2.2rem;
+        line-height: 2.7rem;
         color: var(--black_4);
+
+        @media (min-width: 1024px) {
+          font-size: 3rem;
+          line-height: 3.5rem;
+        }
+
+        @media (min-width: 1440px) {
+          font-size: 5.4rem;
+          line-height: 6.6rem;
+        }
       }
     }
 
     .tools-list {
       display: flex;
-      justify-content: space-between;
-      margin-bottom: 13.2rem;
+      flex-direction: column;
+
+      @media (min-width: 560px) {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+
+      @media (min-width: 960px) {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      @media (min-width: 1200px) {
+        width: 100%;
+        flex-wrap: nowrap;
+      }
+
+      @media (min-width: 1440px) {
+        margin-bottom: 13.2rem;
+      }
 
       .tools__item {
         display: flex;
         align-items: center;
-        flex-direction: column;
+        margin-bottom: 2.5rem;
+
+        @media (min-width: 560px) {
+          width: 50%;
+        }
+
+        @media (min-width: 1200px) {
+          width: 20%;
+          flex-direction: column;
+        }
+
+        @media (min-width: 1440px) {
+          flex-direction: column;
+          margin-bottom: 0;
+        }
 
         &--svg {
-          width: 25.4rem;
-          height: 25.4rem;
+          width: 4.6rem;
+          height: 4.6rem;
           display: flex;
           justify-content: center;
           align-items: center;
-          margin-bottom: 2rem;
-          border-radius: 1.6rem;
+          margin-right: 0.8rem;
+          border-radius: 0.8rem;
           background: var(--green_1);
 
+          @media (min-width: 1024px) {
+            width: 8rem;
+            height: 8rem;
+          }
+
+          @media (min-width: 1440px) {
+            width: 25.4rem;
+            height: 25.4rem;
+            margin-right: 0;
+            margin-bottom: 2rem;
+            border-radius: 1.6rem;
+          }
+
           svg {
-            width: 12.5rem;
-            height: 12.5rem;
+            width: 2.5rem;
+            height: 2.5rem;
             fill: var(--white_1);
+
+            @media (min-width: 1024px) {
+              width: 4.5rem;
+              height: 4.5rem;
+            }
+
+            @media (min-width: 1440px) {
+              width: 12.5rem;
+              height: 12.5rem;
+            }
           }
         }
 
         span {
-          @include Montserrat-ExtraLight();
-          font-size: 2.2rem;
-          line-height: 2.7rem;
+          @include Montserrat-Regular();
+          font-size: 1.6rem;
+          line-height: 2rem;
           color: var(--black_4);
+
+          @media (min-width: 1024px) {
+            @include Montserrat-ExtraLight();
+            font-size: 2.2rem;
+            line-height: 2.7rem;
+          }
         }
       }
     }

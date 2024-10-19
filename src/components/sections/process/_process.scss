@@ -1,29 +1,79 @@
 .process {
   position: relative;
-  padding-bottom: 22rem;
+  // padding: 3rem 0 22rem 0;
+  padding: 6rem 0 13rem 0;
+  margin-bottom: -18rem;
+  margin-top: -13rem;
 
-  &::before {
-    position: absolute;
-    content: "";
-    top: -9.5rem;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url("../img/icons/blue-bg.svg") no-repeat center center;
-    background-size: 173rem 100%;
+  background: url("../img/icons/blue-bg-mb.svg");
+  background-size: 100% 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  @media (min-width: 1200px) {
+    background: url("../img/icons/blue-bg.svg");
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
   }
 
+  @media (min-width: 1440px) {
+    padding: 6rem 0 22rem 0;
+    margin-bottom: -55rem;
+    // background: url("../img/icons/blue-bg.svg");
+    // background-size: 100% 100%;
+    // background-position: center center;
+    // background-repeat: no-repeat;
+  }
+
+  @media (min-width: 1600px) {
+    margin-bottom: -60rem;
+    margin-top: -15rem;
+  }
+
+  // &::before {
+  //   position: absolute;
+  //   content: "";
+  //   top: -3.5rem;
+  //   left: 0;
+  //   right: 0;
+  //   bottom: 0;
+  //   background: url("../img/icons/blue-bg-mb.svg");
+  //   background-size: 100% 100%;
+  //   background-position: 100% 100%;
+  //   background-repeat: no-repeat;
+
+  //   @media (min-width: 1440px) {
+  //     top: -9.5rem;
+  //     background: url("../img/icons/blue-bg.svg");
+  //     background-size: 173rem 100%;
+  //   }
+  // }
+
   &__inner {
-    position: relative;
+    // position: relative;
+
+    @media (min-width: 1440px) {
+      padding-left: 2rem;
+    }
 
     &::after {
       position: absolute;
       content: "";
-      top: 10rem;
-      right: -2rem;
-      width: 24.6rem;
-      height: 23.5rem;
+      top: 3rem;
+      right: 2rem;
+      width: 8rem;
+      height: 10.5rem;
       background: url("../img/icons/star_5.svg") no-repeat center center;
+      background-size: 8rem 8rem;
+
+      @media (min-width: 1440px) {
+        top: 10rem;
+        right: -2rem;
+        width: 24.6rem;
+        height: 23.5rem;
+        background: url("../img/icons/star_5.svg") no-repeat center center;
+      }
     }
 
     .process-img {
@@ -32,23 +82,90 @@
       bottom: 1rem;
 
       &__man {
+        // display: none; /// !!!
         position: absolute;
-        right: -25.8rem;
-        bottom: 6rem;
-        width: 56.6rem;
-        height: 71rem;
+        right: 0rem;
+        bottom: 2rem;
+        width: 15rem;
+        height: 20.6rem;
+
+        @media (min-width: 500px) {
+          width: 18rem;
+          height: 24.6rem;
+        }
+
+        @media (min-width: 600px) {
+          width: 24rem;
+          height: 32.6rem;
+        }
+
+        @media (min-width: 768px) {
+          bottom: -11rem;
+          width: 33rem;
+          height: 57.6rem;
+        }
+
+        @media (min-width: 900px) {
+          width: 38rem;
+          height: 63.6rem;
+        }
+
+        @media (min-width: 1024px) {
+          width: 43rem;
+          height: 69.6rem;
+        }
+
+        @media (min-width: 1440px) {
+          right: -18.8rem;
+          bottom: 23rem;
+          width: 61.6rem;
+          height: 75rem;
+        }
+
+        @media (min-width: 1600px) {
+          bottom: 29rem;
+        }
+
       }
 
       &__quote {
         position: absolute;
         z-index: 100;
-        right: 17rem;
-        bottom: 2rem;
-        width: 50rem;
-        min-height: 15.7rem;
-        padding: 5rem 6rem 5rem 6rem;
+        right: 7.4rem;
+        bottom: 3rem;
+        width: 28.4rem;
+        min-height: 7rem;
+        padding: 2rem 3rem 2rem 3rem;
         background: #E7F5FF;
         border-radius: 1.9rem;
+
+        @media (min-width: 600px) {
+          right: 11.4rem;
+          bottom: 10rem;
+        }
+
+        @media (min-width: 768px) {
+          right: 10.4rem;
+          bottom: 19rem;
+        }
+    
+        @media (min-width: 900px) {
+          right: 11.4rem;
+          bottom: 21rem;
+        }
+
+        @media (min-width: 1024px) {
+        right: 13.4rem;
+        bottom: 23rem;
+        }
+
+        @media (min-width: 1440px) {
+          right: 21.5rem;
+          width: 50rem;
+          bottom: 7rem;
+          min-height: 15.7rem;
+          padding: 5rem 6rem 5rem 6rem;
+        }
 
         &::after {
           position: absolute;
@@ -62,9 +179,14 @@
 
         p {
           @include Montserrat-ExtraLight();
-          font-size: 2rem;
-          line-height: 2.4rem;
+          font-size: 1.2rem;
+          line-height: 1.5rem;
           color: var(--black_2);
+
+          @media (min-width: 1440px) {
+            font-size: 2rem;
+            line-height: 2.4rem;
+          }
         }
       }
     }
@@ -74,44 +196,102 @@
     }
 
     span {
+      @include Montserrat-Medium();
       text-transform: uppercase;
     }
 
     h3 {
-      max-width: 57rem;
+      max-width: 33.2rem;
       margin-bottom: 2.7rem;
+      font-size: 1.2rem;
+      line-height: 1.5rem;
+
+      @media (min-width: 900px) {
+        max-width: 39.2rem;
+        font-size: 1.4rem;
+        line-height: 1.7rem;
+      }
+
+      @media (min-width: 1440px) {
+        max-width: 56rem;
+        font-size: 2rem;
+        line-height: 2.3rem;
+        // font-size: 7.8rem;
+        // line-height: 9.5rem;
+      }
     }
 
     .process-list {
+      padding-left: 3rem; /// !!!
       margin-bottom: 8rem;
       counter-reset: process 0;
 
+      @media (min-width: 900px) {
+        padding-left: 5rem;
+      }
+
+      @media (min-width: 1440px) {
+        padding-left: 9rem;
+      }
+
       li {
         position: relative;
-        max-width: 73.2rem;
+        max-width: 28rem;
+
+        @media (min-width: 1440px) {
+          max-width: 73.2rem;
+        }
 
         &:not(:last-of-type) {
-          margin-bottom: 7.6rem;
+          margin-bottom: 3.2rem;
+
+          @media (min-width: 1440px) {
+            margin-bottom: 7.6rem;
+          }
         }
 
         &::before {
           position: absolute;
           content: counter(process); 
-          top: 50%;
-          left: -10rem;
+          top: 1.6rem;
+          left: -3.5rem;
           transform: translateY(-50%);
           counter-increment: process; 
           @include Montserrat-Medium-Italic();
-          font-size: 12rem;
-          line-height: 14.6rem;
+          font-size: 4.2rem;
+          line-height: 5.1rem;
           color: var(--white_1);
+
+          @media (min-width: 900px) {
+            top: 2.6rem;
+            left: -5.5rem;
+            font-size: 6.2rem;
+            line-height: 7.1rem;
+          }
+
+          @media (min-width: 1440px) {
+            top: 50%; /// ????
+            left: -10rem;
+            font-size: 12rem;
+            line-height: 14.6rem;
+          }
         }
 
         h4,
         p {
-          font-size: 2.2rem;
-          line-height: 2.7rem;
+          font-size: 1.4rem;
+          line-height: 1.7rem;
           color: var(--white_1);
+
+          @media (min-width: 900px) {
+            font-size: 1.8rem;
+            line-height: 2.1rem;
+          }
+
+          @media (min-width: 1440px) {
+            font-size: 2.2rem;
+            line-height: 2.7rem;
+          }
         }
 
         h4 {

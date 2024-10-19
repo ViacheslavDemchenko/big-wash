@@ -28,21 +28,32 @@
   </head>
   <body>
     <header class="header">
+      <div class="header__inner-mb">
+        <div class="logo--mb">
+          <picture><img src="assets/img/icons/logo-mb.svg" width="86" height="26" alt="" title="" loading="lazy"></picture>
+        </div>
+        <div class="phone--mb"><a href="tel:+79587533005">+7(958)-753-30-05</a></div>
+        <div class="burger"><span class="burger__line burger__line--top"></span><span class="burger__line burger__line--middle"></span><span class="burger__line burger__line--bottom"></span></div>
+      </div>
       <div class="container">
         <div class="header__inner"> 
           <div class="logo">
             <picture><img src="assets/img/icons/logo-dt.svg" width="184" height="55" alt="" title="" loading="lazy"></picture>
           </div>
           <nav class="nav">
+            <div class="whatsapp whatsapp--mb"><a href="#!" target="_blank" rel="external">WhatsApp
+                <picture><img src="assets/img/icons/whatsapp.svg" width="40" height="42" alt="" title="" loading="lazy"></picture></a></div>
             <ul role="menu">
               <li role="menuitem"><a href="#prices">Цены</a></li>
               <li role="menuitem"><a href="#about">О нас</a></li>
+              <li role="menuitem"><a href="#contacts">Контакты</a></li>
             </ul>
+            <div class="region region--mb"><a href="#!">Москва и МО </a></div>
           </nav>
-          <div class="whatsapp"><a href="#!" target="_blank" rel="external">
+          <div class="whatsapp whatsapp--dt"><a href="#!" target="_blank" rel="external">
               <picture><img src="assets/img/icons/whatsapp.svg" width="40" height="42" alt="" title="" loading="lazy"></picture></a></div>
           <div class="contacts">
-            <div class="phone"><a href="tel:+7XXXXXXXXXX">+7(XXX)XXX-XX-XX</a></div>
+            <div class="phone"><a href="tel:+79587533005">+7(958)-753-30-05</a></div>
             <div class="region"><a href="#!">Москва и МО </a></div>
           </div>
         </div>
@@ -82,12 +93,12 @@
               <svg aria-hidden="true">
                 <use xlink:href="assets/img/icons/sprite.svg#star_1"> </use>
               </svg><span>
-                Гарантия удаления пыли и грязи 100%  <br>по договору</span>
+                Гарантия удаления пыли и грязи 100% <br>по договору</span>
             </li>
             <li>
               <svg aria-hidden="true">
                 <use xlink:href="assets/img/icons/sprite.svg#star_1"></use>
-              </svg><span>Работаем оперативно, привозим вовремя </span>
+              </svg><span>Работаем оперативно, привозим вовремя </span>
             </li>
           </ul>
         </div>
@@ -178,6 +189,7 @@
             Мы сами зaберeм и пpивезем ковер к вам домoй <span>бесплатно</span></h3>
           <p class="address">г. Москва и МО</p>
           <form class="form" name="order" method="post" action="">
+            <picture><img class="form__star" src="assets/img/icons/star_6.svg" width="53" height="59" alt="" title="" loading="lazy"></picture>
             <h4 class="form__title">Звоните и заказывайте качественную и недорогую чистку ковра только у нас!</h4>
             <p class="form__subtitle">Обещаем никакой рассылки и спама</p>
             <div class="form__inputs">
@@ -242,7 +254,7 @@
           <div class="about__text"> 
             <h2>О нас</h2>
             <p>
-              Мы зaнимаемся  чисткой кoвpов и палаcов в своем цeхе — “Большая стирка”. Уже  <span>более 10 лет </span>даем <span>новую </span>жизнь вашим любимым коврам!</p>
+              Мы зaнимаемся  чисткой кoвpов и палаcов в своем цeхе — “Большая стирка”.  <br>Уже <span>более 10 лет </span>даем <span>новую </span>жизнь вашим любимым коврам!</p>
           </div>
           <div class="about__slider-wrapper">
             <div class="about__slider">
@@ -307,156 +319,109 @@
       <div class="container"> 
         <div class="reviews__inner"> 
           <h2>Отзывы наших клиентов</h2>
-          <div class="reviews__slider">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="swiper-slide__top"> 
-                  <div class="swiper-slide__avatar"><img src="assets/img/avatar.jpg" width="60" height="60" alt="" title="" loading="lazy"></div>
-                  <div class="swiper-slide__name"><span>Иван Иванов </span></div>
-                  <div class="swiper-slide__stars">
-                    <svg aria-hidden="true">
-                      <use xlink:href="assets/img/icons/sprite.svg#review-star"></use>
-                    </svg>
-                    <svg aria-hidden="true">
-                      <use xlink:href="assets/img/icons/sprite.svg#review-star"></use>
-                    </svg>
-                    <svg aria-hidden="true">
-                      <use xlink:href="assets/img/icons/sprite.svg#review-star"></use>
-                    </svg>
-                    <svg aria-hidden="true">
-                      <use xlink:href="assets/img/icons/sprite.svg#review-star"></use>
-                    </svg>
-                    <svg aria-hidden="true">
-                      <use xlink:href="assets/img/icons/sprite.svg#review-star"></use>
-                    </svg>
+          <div class="reviews__slider-wrapper">
+            <div class="reviews__slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="swiper-slide__top"> 
+                    <div class="swiper-slide__avatar"><img src="assets/img/avatar.jpg" width="60" height="60" alt="" title="" loading="lazy"></div>
+                    <div class="swiper-slide__name"><span>Иван Иванов </span></div>
+                    <div class="swiper-slide__stars">
+                      <picture> <img src="assets/img/icons/review-star.svg" width="30" height="30" alt="" title="" loading="lazy"></picture>
+                      <picture> <img src="assets/img/icons/review-star.svg" width="30" height="30" alt="" title="" loading="lazy"></picture>
+                      <picture> <img src="assets/img/icons/review-star.svg" width="30" height="30" alt="" title="" loading="lazy"></picture>
+                      <picture> <img src="assets/img/icons/review-star.svg" width="30" height="30" alt="" title="" loading="lazy"></picture>
+                      <picture> <img src="assets/img/icons/review-star.svg" width="30" height="30" alt="" title="" loading="lazy"></picture>
+                      <picture> <img src="assets/img/icons/review-star.svg" width="30" height="30" alt="" title="" loading="lazy"></picture>
+                    </div>
+                  </div>
+                  <div class="swiper-slide__bottom">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
                   </div>
                 </div>
-                <div class="swiper-slide__bottom">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                  </p>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="swiper-slide__top"> 
-                  <div class="swiper-slide__avatar"><img src="assets/img/avatar.jpg" width="60" height="60" alt="" title="" loading="lazy"></div>
-                  <div class="swiper-slide__name"><span>Иван Иванов </span></div>
-                  <div class="swiper-slide__stars">
-                    <svg aria-hidden="true">
-                      <use xlink:href="assets/img/icons/sprite.svg#review-star"></use>
-                    </svg>
-                    <svg aria-hidden="true">
-                      <use xlink:href="assets/img/icons/sprite.svg#review-star"></use>
-                    </svg>
-                    <svg aria-hidden="true">
-                      <use xlink:href="assets/img/icons/sprite.svg#review-star"></use>
-                    </svg>
-                    <svg aria-hidden="true">
-                      <use xlink:href="assets/img/icons/sprite.svg#review-star"></use>
-                    </svg>
-                    <svg aria-hidden="true">
-                      <use xlink:href="assets/img/icons/sprite.svg#review-star"></use>
-                    </svg>
+                <div class="swiper-slide">
+                  <div class="swiper-slide__top"> 
+                    <div class="swiper-slide__avatar"><img src="assets/img/avatar.jpg" width="60" height="60" alt="" title="" loading="lazy"></div>
+                    <div class="swiper-slide__name"><span>Иван Иванов </span></div>
+                    <div class="swiper-slide__stars">
+                      <picture> <img src="assets/img/icons/review-star.svg" width="30" height="30" alt="" title="" loading="lazy"></picture>
+                      <picture> <img src="assets/img/icons/review-star.svg" width="30" height="30" alt="" title="" loading="lazy"></picture>
+                      <picture> <img src="assets/img/icons/review-star.svg" width="30" height="30" alt="" title="" loading="lazy"></picture>
+                      <picture> <img src="assets/img/icons/review-star.svg" width="30" height="30" alt="" title="" loading="lazy"></picture>
+                      <picture> <img src="assets/img/icons/review-star.svg" width="30" height="30" alt="" title="" loading="lazy"></picture>
+                    </div>
+                  </div>
+                  <div class="swiper-slide__bottom">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
                   </div>
                 </div>
-                <div class="swiper-slide__bottom">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                  </p>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="swiper-slide__top"> 
-                  <div class="swiper-slide__avatar"><img src="assets/img/avatar.jpg" width="60" height="60" alt="" title="" loading="lazy"></div>
-                  <div class="swiper-slide__name"><span>Иван Иванов </span></div>
-                  <div class="swiper-slide__stars">
-                    <svg aria-hidden="true">
-                      <use xlink:href="assets/img/icons/sprite.svg#review-star"></use>
-                    </svg>
-                    <svg aria-hidden="true">
-                      <use xlink:href="assets/img/icons/sprite.svg#review-star"></use>
-                    </svg>
-                    <svg aria-hidden="true">
-                      <use xlink:href="assets/img/icons/sprite.svg#review-star"></use>
-                    </svg>
-                    <svg aria-hidden="true">
-                      <use xlink:href="assets/img/icons/sprite.svg#review-star"></use>
-                    </svg>
-                    <svg aria-hidden="true">
-                      <use xlink:href="assets/img/icons/sprite.svg#review-star"></use>
-                    </svg>
+                <div class="swiper-slide">
+                  <div class="swiper-slide__top"> 
+                    <div class="swiper-slide__avatar"><img src="assets/img/avatar.jpg" width="60" height="60" alt="" title="" loading="lazy"></div>
+                    <div class="swiper-slide__name"><span>Иван Иванов </span></div>
+                    <div class="swiper-slide__stars">
+                      <picture> <img src="assets/img/icons/review-star.svg" width="30" height="30" alt="" title="" loading="lazy"></picture>
+                      <picture> <img src="assets/img/icons/review-star.svg" width="30" height="30" alt="" title="" loading="lazy"></picture>
+                      <picture> <img src="assets/img/icons/review-star.svg" width="30" height="30" alt="" title="" loading="lazy"></picture>
+                      <picture> <img src="assets/img/icons/review-star.svg" width="30" height="30" alt="" title="" loading="lazy"></picture>
+                      <picture> <img src="assets/img/icons/review-star.svg" width="30" height="30" alt="" title="" loading="lazy"></picture>
+                    </div>
+                  </div>
+                  <div class="swiper-slide__bottom">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
                   </div>
                 </div>
-                <div class="swiper-slide__bottom">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                  </p>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="swiper-slide__top"> 
-                  <div class="swiper-slide__avatar"><img src="assets/img/avatar.jpg" width="60" height="60" alt="" title="" loading="lazy"></div>
-                  <div class="swiper-slide__name"><span>Иван Иванов </span></div>
-                  <div class="swiper-slide__stars">
-                    <svg aria-hidden="true">
-                      <use xlink:href="assets/img/icons/sprite.svg#review-star"></use>
-                    </svg>
-                    <svg aria-hidden="true">
-                      <use xlink:href="assets/img/icons/sprite.svg#review-star"></use>
-                    </svg>
-                    <svg aria-hidden="true">
-                      <use xlink:href="assets/img/icons/sprite.svg#review-star"></use>
-                    </svg>
-                    <svg aria-hidden="true">
-                      <use xlink:href="assets/img/icons/sprite.svg#review-star"></use>
-                    </svg>
-                    <svg aria-hidden="true">
-                      <use xlink:href="assets/img/icons/sprite.svg#review-star"></use>
-                    </svg>
+                <div class="swiper-slide">
+                  <div class="swiper-slide__top"> 
+                    <div class="swiper-slide__avatar"><img src="assets/img/avatar.jpg" width="60" height="60" alt="" title="" loading="lazy"></div>
+                    <div class="swiper-slide__name"><span>Иван Иванов </span></div>
+                    <div class="swiper-slide__stars">
+                      <picture> <img src="assets/img/icons/review-star.svg" width="30" height="30" alt="" title="" loading="lazy"></picture>
+                      <picture> <img src="assets/img/icons/review-star.svg" width="30" height="30" alt="" title="" loading="lazy"></picture>
+                      <picture> <img src="assets/img/icons/review-star.svg" width="30" height="30" alt="" title="" loading="lazy"></picture>
+                      <picture> <img src="assets/img/icons/review-star.svg" width="30" height="30" alt="" title="" loading="lazy"></picture>
+                      <picture> <img src="assets/img/icons/review-star.svg" width="30" height="30" alt="" title="" loading="lazy"></picture>
+                    </div>
+                  </div>
+                  <div class="swiper-slide__bottom">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
                   </div>
                 </div>
-                <div class="swiper-slide__bottom">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                  </p>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="swiper-slide__top"> 
-                  <div class="swiper-slide__avatar"><img src="assets/img/avatar.jpg" width="60" height="60" alt="" title="" loading="lazy"></div>
-                  <div class="swiper-slide__name"><span>Иван Иванов </span></div>
-                  <div class="swiper-slide__stars">
-                    <svg aria-hidden="true">
-                      <use xlink:href="assets/img/icons/sprite.svg#review-star"></use>
-                    </svg>
-                    <svg aria-hidden="true">
-                      <use xlink:href="assets/img/icons/sprite.svg#review-star"></use>
-                    </svg>
-                    <svg aria-hidden="true">
-                      <use xlink:href="assets/img/icons/sprite.svg#review-star"></use>
-                    </svg>
-                    <svg aria-hidden="true">
-                      <use xlink:href="assets/img/icons/sprite.svg#review-star"></use>
-                    </svg>
-                    <svg aria-hidden="true">
-                      <use xlink:href="assets/img/icons/sprite.svg#review-star"></use>
-                    </svg>
+                <div class="swiper-slide">
+                  <div class="swiper-slide__top"> 
+                    <div class="swiper-slide__avatar"><img src="assets/img/avatar.jpg" width="60" height="60" alt="" title="" loading="lazy"></div>
+                    <div class="swiper-slide__name"><span>Иван Иванов </span></div>
+                    <div class="swiper-slide__stars">
+                      <picture> <img src="assets/img/icons/review-star.svg" width="30" height="30" alt="" title="" loading="lazy"></picture>
+                      <picture> <img src="assets/img/icons/review-star.svg" width="30" height="30" alt="" title="" loading="lazy"></picture>
+                      <picture> <img src="assets/img/icons/review-star.svg" width="30" height="30" alt="" title="" loading="lazy"></picture>
+                      <picture> <img src="assets/img/icons/review-star.svg" width="30" height="30" alt="" title="" loading="lazy"></picture>
+                      <picture> <img src="assets/img/icons/review-star.svg" width="30" height="30" alt="" title="" loading="lazy"></picture>
+                    </div>
                   </div>
-                </div>
-                <div class="swiper-slide__bottom">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                  </p>
+                  <div class="swiper-slide__bottom">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -477,7 +442,7 @@
               </picture>
             </div>
             <div class="footer__contacts"> 
-              <h3>Контакты</h3><a href="mailto:Big.Styrka@XXXXX.ru">Big.Styrka@XXXXX.ru</a><a href="tel:+7XXXXXXXXXX">+7(XXX)-XXX-XX-XX</a>
+              <h3>Контакты</h3><a href="mailto:Big.Styrka@XXXXX.ru">Big.Styrka@XXXXX.ru</a><a href="tel:+79587533005">+7(958)-753-30-05</a>
               <div class="whatsapp"><a href="#!" target="_blank" rel="external">WhatsApp</a></div>
               <button class="btn first-btn footer-btn">Оставить заявку</button>
             </div>

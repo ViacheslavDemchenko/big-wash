@@ -1,9 +1,16 @@
 header.header
+  .header__inner-mb
+    .logo--mb
+      picture
+        img(src="assets/img/icons/logo-mb.svg" width="86" height="26" alt="" title="" loading="lazy")
+    .phone--mb
+      a(href="tel:+79587533005") +7(958)-753-30-05
+    include ./../../blocks/burger/burger.pug
   .container
     .header__inner 
       include ./../../blocks/logo/logo.pug
       include ./../../blocks/nav/nav.pug
-      .whatsapp
+      .whatsapp.whatsapp--dt
         a(href="#!" target="_blank" rel="external")
           picture
             img(src="assets/img/icons/whatsapp.svg" width="40" height="42" alt="" title="" loading="lazy")

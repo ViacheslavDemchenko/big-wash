@@ -1,3 +1,19 @@
 .logo {
-  margin-right: 11.3rem;
+  display: none;
+
+  @media (min-width: 1440px) {
+    display: block;
+    margin-right: 11.3rem;
+  }
+
+  &--mb {
+    margin-right: auto;
+    display: block;
+    width: 8.6rem;
+    height: 2.6rem;
+
+    @media (min-width: 1440px) {
+      display: none;
+    }
+  }
 }

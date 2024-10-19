@@ -1,11 +1,21 @@
 .btn {
   padding: 1.45rem 3.96rem;
   @include Montserrat-ExtraLight();
-  font-size: 2.4rem;
-  line-height: 2.9rem;
+  font-size: 0.9rem;
+  line-height: 1.1rem;
   color: var(--black_1);
   background: var(--green_1);
   border-radius: 1.4rem;
   border: none;
   outline: none;
+
+  @media (min-width: 1024px) {
+    font-size: 2rem;
+    line-height: 2.3rem;
+  }
+
+  @media (min-width: 1440px) {
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+  }
 }

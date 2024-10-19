@@ -1,6 +1,10 @@
 .footer {
-  padding: 16.8rem 0 15rem 0;
+  padding: 3.5rem 0 2rem 0;
   background: var(--blue_3);
+
+  @media (min-width: 1440px) {
+    padding: 6.6rem 0 10rem 0;
+  }
 
   &__inner {
     width: 100%;
@@ -8,19 +12,67 @@
     &-top {
       display: flex;
       justify-content: space-between;
-      align-items: center;
       margin-bottom: 8.6rem;
+
+      @media (min-width: 500px) {
+        align-items: center;
+      }
 
       h3 {
         margin-bottom: 2.5rem;
-        @include Montserrat-ExtraLight();
-        font-size: 5rem;
-        line-height: 6.1rem;
+        @include Montserrat-Bold();
+        font-size: 1.4rem;
+        line-height: 1.7rem;
         color: var(--white_1);
+
+        @media (min-width: 1024px) {
+          font-size: 2.5rem;
+          line-height: 2.8rem;
+        }
+
+        @media (min-width: 1440px) {
+          @include Montserrat-ExtraLight();
+          font-size: 5rem;
+          line-height: 6.1rem;
+        }
       }
 
       .footer__image {
+        width: 15.6rem;
+        height: 6.8rem;
+        margin-top: 3rem;
 
+        @media (min-width: 500px) {
+          width: 20.6rem;
+          height: 11.8rem;
+          margin-top: 0;
+        }
+
+        @media (min-width: 768px) {
+          width: 27.6rem;
+          height: 18.8rem;
+        }
+
+        @media (min-width: 900px) {
+          width: 30.6rem;
+          height: 21.8rem;
+        }
+
+        @media (min-width: 1024px) {
+          width: 36.6rem;
+          height: 27.8rem;
+        }
+
+        @media (min-width: 1440px) {
+          width: 58rem;
+          height: 47.4rem;
+        }
+
+        img {
+          height: 100%;
+          width: 100%;
+          margin-bottom: 0;
+        }
       }
 
       .footer__contacts {
@@ -32,9 +84,19 @@
           display: block;
           margin-bottom: 2.5rem;
           @include Montserrat-ExtraLight();
-          font-size: 3.8rem;
-          line-height: 4.6rem;
+          font-size: 1.2rem;
+          line-height: 1.5rem;
           color: var(--white_1);
+
+          @media (min-width: 1024px) {
+            font-size: 2rem;
+            line-height: 2.3rem;
+          }
+
+          @media (min-width: 1440px) {
+            font-size: 3.8rem;
+            line-height: 4.6rem;
+          }
         }
 
         .whatsapp {
@@ -52,25 +114,60 @@
           &::before {
             position: absolute;
             content: "";
-            left: -5rem;
-            width: 4.6rem;
-            height: 4.9rem;
+            left: -2.2rem;
+            width: 1.8rem;
+            height: 1.8rem;
             background: url("../img/icons/whatsapp.svg") no-repeat center center;
+            background-size: 100% 100%;
+
+            @media (min-width: 1440px) {
+              left: -5rem;
+              width: 4.6rem;
+              height: 4.9rem;
+            }
           }
         }
 
         .footer-btn {
-          padding: 1.95rem 6.16rem;
+          padding: 0.55rem 1.38rem;
+          border-radius: 0.6rem;
+
+          @media (min-width: 1024px) {
+            padding: 1.5rem 2.1rem;
+            font-size: 1.5rem;
+            line-height: 2.1rem;
+          }
+
+          @media (min-width: 1440px) {
+            padding: 1.95rem 6.16rem;
+          }
         }
       }
     }
 
     &-bottom {
+      display: flex;
+      justify-content: space-between;
       @include Montserrat-Medium();
-      font-size: 2.4rem;
-      line-height: 2.9rem;
+      font-size: 1rem;
+      line-height: 1.2rem;
       color: var(--white_1);
       opacity: 0.33;
+
+      @media (min-width: 1024px) {
+        font-size: 1.5rem;
+        line-height: 1.7rem;
+      }
+
+      @media (min-width: 1440px) {
+        display: block;
+        font-size: 2.4rem;
+        line-height: 2.9rem;
+      }
+
+      .footer__name {
+        order: +1;
+      }
     }
   }
 }

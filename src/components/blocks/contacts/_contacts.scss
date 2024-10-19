@@ -7,18 +7,32 @@
 
     a {
       @include Montserrat-ExtraLight();
-      font-weight: 200;
-      font-size: 2.6rem;
-      line-height: 3.2rem;
+      font-size: 1.1rem;
+      line-height: 1.3rem;
       color: var(--black_1);
+
+      @media (min-width: 1440px) {
+        font-size: 2.6rem;
+        line-height: 3.2rem;
+      }
     }
   }
 
   .phone {
-    margin-right: 7.4rem;
+    display: none;
+
+    @media (min-width: 1440px) {
+      display: block;
+      margin-right: 7.4rem;
+    }
   }
 
   .region {
+    display: none;
+
+    @media (min-width: 1440px) {
+      display: block;
+    }
 
     a {
       color: var(--blue_2);
