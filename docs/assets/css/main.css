@@ -2062,8 +2062,8 @@ h3 {
     padding: 3.4rem 0 0 0;
     margin-top: 0;
     background: url("../img/icons/green-bg.svg");
-    background-size: 100% 100%;
-    background-position: 100% 100%;
+    background-size: 91% 100%;
+    background-position: 27% 100%;
     background-repeat: no-repeat;
   }
 
@@ -2488,6 +2488,14 @@ h3 {
   }
 }
 
+@media screen and (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 0) {
+  .advantages {
+    background-size: 100% 100%;
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+  }
+}
+
 @media (min-width: 1600px) {
   h1 {
     margin-bottom: 3.6rem;
@@ -2570,7 +2578,6 @@ h3 {
 
   .first__inner .first-img {
     width: 50%;
-    transform: translateX(31rem);
   }
 
   .first__inner .first-img picture {
@@ -2579,6 +2586,12 @@ h3 {
 
   .order {
     margin-top: -48.5rem;
+  }
+}
+
+@media screen and (min-width: 1920px) and (-webkit-min-device-pixel-ratio: 0) {
+  .first__inner .first-img {
+    transform: translateX(-12rem);
   }
 }
 
