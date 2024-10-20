@@ -1,5 +1,6 @@
 header.header
   .header__inner-mb
+    include ./../../blocks/nav/nav-mb.pug
     .logo--mb
       picture
         img(src="assets/img/icons/logo-mb.svg" width="86" height="26" alt="" title="" loading="lazy")
@@ -9,9 +10,4 @@ header.header
   .container
     .header__inner 
       include ./../../blocks/logo/logo.pug
-      include ./../../blocks/nav/nav.pug
-      .whatsapp.whatsapp--dt
-        a(href="#!" target="_blank" rel="external")
-          picture
-            img(src="assets/img/icons/whatsapp.svg" width="40" height="42" alt="" title="" loading="lazy")
-      include ./../../blocks/contacts/contacts.pug
+      include ./../../blocks/nav/nav-dt.pug

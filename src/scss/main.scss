@@ -37,7 +37,8 @@
 
 // БЭМ-блоки
 @import "./../components/blocks/logo/_logo"; // Логотип
-@import "./../components/blocks/nav/_nav"; // Меню
+@import "./../components/blocks/nav/_nav-dt"; // Меню десктоп
+@import "./../components/blocks/nav/_nav-mb"; // Меню мобилка
 @import "./../components/blocks/contacts/_contacts"; // Контакты
 // @import "./../components/blocks/socials/_socials"; // Соцсети
 @import "./../components/blocks/burger/_burger"; // Бургер

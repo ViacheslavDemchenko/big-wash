@@ -71,10 +71,10 @@ footer {
 }
 
 // Запрет скролла
-// .no-scroll {
-//   overflow: hidden;
+.no-scroll {
+  overflow: hidden;
 
-//   @media (min-width: 1200px) {
-//     padding-right: 1.7rem;
-//   }
-// }
+  @media (min-width: 1200px) {
+    padding-right: 1.7rem;
+  }
+}

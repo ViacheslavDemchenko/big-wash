@@ -14,22 +14,15 @@
     padding: 3.4rem 0 0 0;
       margin-top: 0;
       background: url("../img/icons/green-bg.svg");
-      background-size: 91% 100%;
-      background-position: 27% 100%;
+      background-size: 89% 100%;
+      background-position: 29% 100%;
       background-repeat: no-repeat;
-    // padding: 15.4rem 0 0 0;
-    // padding: 3.4rem 0 0 0;
-    // margin-top: 0;
-    // background: url("../img/icons/green-bg.svg");
-    // background-size: 100% 100%;
-    // background-position: 100% 100%;
-    // background-repeat: no-repeat;
 
-    @media screen and (-webkit-min-device-pixel-ratio:0) {
-      background-size: 100% 100%;
-      background-position: 100% 100%;
-      background-repeat: no-repeat;
-    }
+    // @media screen and (-webkit-min-device-pixel-ratio:0) {
+    //   background-size: 89% 100%;
+    //   background-position: 29% 100%;
+    //   background-repeat: no-repeat;
+    // }
   }
 
   &__inner {

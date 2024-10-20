@@ -350,18 +350,18 @@ if (window && window.NodeList && !NodeList.prototype.forEach) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _modules_sliderAbout__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/sliderAbout */ "./src/js/modules/sliderAbout.js");
-/* harmony import */ var _modules_sliderReviews__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/sliderReviews */ "./src/js/modules/sliderReviews.js");
+/* harmony import */ var _modules_mobileMenu__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/mobileMenu */ "./src/js/modules/mobileMenu.js");
+/* harmony import */ var _modules_sliderAbout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/sliderAbout */ "./src/js/modules/sliderAbout.js");
+/* harmony import */ var _modules_sliderReviews__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/sliderReviews */ "./src/js/modules/sliderReviews.js");
 __webpack_require__(/*! polyfill-nodelist-foreach */ "./node_modules/polyfill-nodelist-foreach/index.js"); // Полифил для поддержки метода forEach в IE11+ и Safari9
 __webpack_require__(/*! svgxuse */ "./node_modules/svgxuse/svgxuse.js"); // Полифил для поддержки IE11+ и старыми браузерами использования SVG через use 
 
-// import mobileMenu from './modules/mobileMenu'; // Мобильное меню
+ // Мобильное меню
 
 
-
-// mobileMenu();
-Object(_modules_sliderAbout__WEBPACK_IMPORTED_MODULE_0__["default"])();
-Object(_modules_sliderReviews__WEBPACK_IMPORTED_MODULE_1__["default"])();
+Object(_modules_mobileMenu__WEBPACK_IMPORTED_MODULE_0__["default"])();
+Object(_modules_sliderAbout__WEBPACK_IMPORTED_MODULE_1__["default"])();
+Object(_modules_sliderReviews__WEBPACK_IMPORTED_MODULE_2__["default"])();
 
 /***/ }),
 
@@ -4663,6 +4663,97 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;function _type
     }];
   return R.use(ce), R;
 });
+
+/***/ }),
+
+/***/ "./src/js/modules/mobileMenu.js":
+/*!**************************************!*\
+  !*** ./src/js/modules/mobileMenu.js ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return mobileMenu; });
+function mobileMenu() {
+  var burger = document.querySelector('.burger');
+  var navMenu = document.querySelector('.nav--mb');
+  var navLinks = document.querySelectorAll('.nav--mb a');
+  var htmlTag = document.documentElement;
+  if (burger && navMenu) {
+    burger.addEventListener('click', function () {
+      navMenu.classList.toggle('nav--mb-active');
+      burger.classList.toggle('burger--active');
+      htmlTag.classList.toggle('no-scroll');
+    });
+
+    // Закрытие меню при клике на любую ссылку
+    navLinks.forEach(function (link) {
+      link.addEventListener('click', function () {
+        navMenu.classList.remove('nav--mb-active');
+        burger.classList.remove('burger--active');
+        htmlTag.classList.remove('no-scroll');
+      });
+    });
+
+    // Автоматическое закрытие меню при изменении размера окна
+    window.addEventListener('resize', function () {
+      if (window.innerWidth >= 1200) {
+        navMenu.classList.remove('nav--mb-active');
+        burger.classList.remove('burger--active');
+        htmlTag.classList.remove('no-scroll');
+      }
+    });
+  }
+
+  // if(document.getElementById('.burger')) {
+  //     const hamburger = document.getElementById('.burger');
+  //     const mobileMenuItems = document.querySelectorAll('.menu li a');
+  //     const htmlElement = document.getElementsByTagName('html')[0];
+  //     const mobileMenu = document.querySelector('.nav--mb');
+
+  //     const body = document.body;
+  //     let screenWidth = window.innerWidth;
+
+  //     hamburger.addEventListener('click', () => {
+  //       console.log('Yes');
+  //         hamburger.classList.toggle('active');
+  //         mobileMenu.classList.toggle('nav--mb-active');
+  //         body.classList.toggle('no-scroll');
+  //         htmlElement.classList.toggle('no-scroll');
+  //     });
+
+  //     window.addEventListener('resize', () => {
+  //         screenWidth = window.innerWidth;
+
+  //         if (screenWidth < 1024) {
+  //             linksClick();
+  //         }
+
+  //         if (screenWidth >= 1024) {
+  //             hamburger.classList.remove('active');
+  //             mobileMenu.classList.remove('nav--mb-active');
+  //             body.classList.remove('no-scroll');
+  //             htmlElement.classList.remove('no-scroll');
+  //         } 
+  //     });
+
+  //     function linksClick() {
+  //         mobileMenuItems.forEach(link => {
+  //             link.addEventListener('click', (e) => {
+  //                 if (screenWidth < 1024) {
+  //                     hamburger.classList.remove('active');
+  //                     mobileMenu.classList.remove('nav--mb-active');
+  //                     body.classList.remove('no-scroll');
+  //                     htmlElement.classList.remove('no-scroll');
+  //                 }
+  //             });
+  //         });
+  //     }
+  //     linksClick();
+  // }
+}
 
 /***/ }),
 

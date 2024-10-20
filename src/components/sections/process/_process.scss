@@ -12,9 +12,12 @@
 
   @media (min-width: 1200px) {
     background: url("../img/icons/blue-bg.svg");
-    background-size: 100% 100%;
-    background-position: center center;
+    background-size: 97% 100%;
+    background-position: 8% 100%;
     background-repeat: no-repeat;
+    // background-size: 100% 100%;
+    // background-position: 100% 100%;
+    // background-repeat: no-repeat;
   }
 
   @media (min-width: 1440px) {
@@ -69,7 +72,7 @@
 
       @media (min-width: 1440px) {
         top: 17rem;
-        right: 13rem;
+        right: 31rem;
         width: 24.6rem;
         height: 23.5rem;
         background: url("../img/icons/star_5.svg") no-repeat center center;
@@ -116,7 +119,7 @@
         }
 
         @media (min-width: 1440px) {
-          right: -18.8rem;
+          right: -8.8rem;
           bottom: 23rem;
           width: 61.6rem;
           height: 75rem;
