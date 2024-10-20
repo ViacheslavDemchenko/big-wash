@@ -351,17 +351,20 @@ if (window && window.NodeList && !NodeList.prototype.forEach) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_mobileMenu__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/mobileMenu */ "./src/js/modules/mobileMenu.js");
-/* harmony import */ var _modules_sliderAbout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/sliderAbout */ "./src/js/modules/sliderAbout.js");
-/* harmony import */ var _modules_sliderReviews__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/sliderReviews */ "./src/js/modules/sliderReviews.js");
+/* harmony import */ var _modules_smoothScroll__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/smoothScroll */ "./src/js/modules/smoothScroll.js");
+/* harmony import */ var _modules_sliderAbout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/sliderAbout */ "./src/js/modules/sliderAbout.js");
+/* harmony import */ var _modules_sliderReviews__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/sliderReviews */ "./src/js/modules/sliderReviews.js");
 __webpack_require__(/*! polyfill-nodelist-foreach */ "./node_modules/polyfill-nodelist-foreach/index.js"); // Полифил для поддержки метода forEach в IE11+ и Safari9
 __webpack_require__(/*! svgxuse */ "./node_modules/svgxuse/svgxuse.js"); // Полифил для поддержки IE11+ и старыми браузерами использования SVG через use 
 
  // Мобильное меню
 
 
+
 Object(_modules_mobileMenu__WEBPACK_IMPORTED_MODULE_0__["default"])();
-Object(_modules_sliderAbout__WEBPACK_IMPORTED_MODULE_1__["default"])();
-Object(_modules_sliderReviews__WEBPACK_IMPORTED_MODULE_2__["default"])();
+Object(_modules_smoothScroll__WEBPACK_IMPORTED_MODULE_1__["default"])();
+Object(_modules_sliderAbout__WEBPACK_IMPORTED_MODULE_2__["default"])();
+Object(_modules_sliderReviews__WEBPACK_IMPORTED_MODULE_3__["default"])();
 
 /***/ }),
 
@@ -4821,7 +4824,8 @@ function sliderReviews() {
           spaceBetween: 40
         },
         768: {
-          slidesPerView: 2,
+          slidesPerView: 2.5,
+          loopedSlides: 1,
           spaceBetween: 40
         },
         1440: {
@@ -4832,6 +4836,37 @@ function sliderReviews() {
       }
     });
   }
+}
+
+/***/ }),
+
+/***/ "./src/js/modules/smoothScroll.js":
+/*!****************************************!*\
+  !*** ./src/js/modules/smoothScroll.js ***!
+  \****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return smoothScroll; });
+function smoothScroll() {
+  document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      var targetID = this.getAttribute('href');
+      var targetElement = document.querySelector(targetID);
+      if (targetElement) {
+        var headerOffset = 0; // Смещение для заголовка (можно изменить при необходимости)
+        var elementPosition = targetElement.getBoundingClientRect().top;
+        var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth" // Плавная прокрутка
+        });
+      }
+    });
+  });
 }
 
 /***/ })

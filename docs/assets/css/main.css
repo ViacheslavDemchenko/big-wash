@@ -255,7 +255,9 @@ h3 {
   align-items: flex-end;
 }
 
-.footer__inner-top .footer__contacts a {
+.footer__inner-top .footer__contacts .mail,
+.footer__inner-top .footer__contacts .phone,
+.footer__inner-top .footer__contacts .whatsapp {
   display: block;
   margin-bottom: 2.5rem;
   font-family: "Montserrat-ExtraLight";
@@ -276,7 +278,9 @@ h3 {
 
 .footer__inner-top .footer__contacts .whatsapp a {
   margin-bottom: 0;
-  text-decoration-line: underline;
+  text-decoration: underline;
+  text-underline-offset: 0.8rem;
+  text-decoration-thickness: 0.1rem;
   color: var(--green_1);
 }
 
@@ -293,6 +297,7 @@ h3 {
 .footer__inner-top .footer__contacts .footer-btn {
   padding: 0.55rem 1.38rem;
   border-radius: 0.6rem;
+  color: var(--black_3);
 }
 
 .footer__inner-bottom {
@@ -1277,6 +1282,7 @@ h3 {
 }
 
 .reviews__inner .reviews__slider .swiper-wrapper {
+  width: 33.5rem;
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -1543,7 +1549,7 @@ h3 {
   }
 
   .reviews__inner .reviews__slider {
-    width: 100%;
+    width: 100vw;
   }
 
   .reviews__inner .reviews__slider .swiper-wrapper .swiper-slide {
@@ -1680,7 +1686,9 @@ h3 {
     height: 27.8rem;
   }
 
-  .footer__inner-top .footer__contacts a {
+  .footer__inner-top .footer__contacts .mail,
+  .footer__inner-top .footer__contacts .phone,
+  .footer__inner-top .footer__contacts .whatsapp {
     font-size: 2rem;
     line-height: 2.3rem;
   }
@@ -2008,7 +2016,9 @@ h3 {
     height: 47.4rem;
   }
 
-  .footer__inner-top .footer__contacts a {
+  .footer__inner-top .footer__contacts .mail,
+  .footer__inner-top .footer__contacts .phone,
+  .footer__inner-top .footer__contacts .whatsapp {
     font-size: 3.8rem;
     line-height: 4.6rem;
   }
@@ -2020,7 +2030,9 @@ h3 {
   }
 
   .footer__inner-top .footer__contacts .footer-btn {
-    padding: 1.95rem 6.16rem;
+    padding: 1.95rem 5.16rem;
+    font-size: 2.7rem;
+    line-height: 3.3rem;
   }
 
   .footer__inner-bottom {
@@ -2451,12 +2463,17 @@ h3 {
     margin-bottom: 5.4rem;
   }
 
+  .reviews__inner .reviews__slider-wrapper {
+    transform: translateX(-8rem);
+  }
+
   .reviews__inner .reviews__slider {
-    width: 100%;
+    overflow: hidden;
+    padding-left: 15rem;
   }
 
   .reviews__inner .reviews__slider .swiper-wrapper {
-    left: 0.5rem;
+    left: -7rem;
     padding: 0 0 12rem 0;
   }
 
@@ -2499,11 +2516,11 @@ h3 {
   }
 
   .reviews__slider-next {
-    left: -3rem;
+    left: 4rem;
   }
 
   .reviews__slider-prev {
-    right: -2rem;
+    right: -7rem;
   }
 
   .reviews__slider-next::after,
@@ -2591,7 +2608,7 @@ h3 {
 
 @media (min-width: 1800px) {
   .reviews__slider-prev {
-    right: -22rem;
+    right: -30rem;
   }
 }
 

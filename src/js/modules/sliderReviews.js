@@ -19,8 +19,9 @@ export default function sliderReviews() {
           spaceBetween: 40,
         },
         768: {
-          slidesPerView: 2,
-          spaceBetween: 40
+          slidesPerView: 2.5,
+          loopedSlides: 1,
+          spaceBetween: 40,
         },
         1440: {
           slidesPerView: 2.5,

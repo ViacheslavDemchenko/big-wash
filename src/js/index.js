@@ -3,9 +3,11 @@ require('svgxuse'); // Полифил для поддержки IE11+ и ста�
 
 
 import mobileMenu from './modules/mobileMenu'; // Мобильное меню
+import smoothScroll from './modules/smoothScroll';
 import sliderAbout from './modules/sliderAbout';
 import sliderReviews from './modules/sliderReviews';
 
 mobileMenu();
+smoothScroll();
 sliderAbout();
 sliderReviews();
