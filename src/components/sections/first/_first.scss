@@ -105,6 +105,8 @@
       .first-btn {
         width: 100%;
         max-width: 31.6rem;
+        display: block;
+        text-align: center;
         @include Montserrat-Regular();
         font-size: 1.6rem;
         line-height: 2rem;

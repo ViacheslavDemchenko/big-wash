@@ -141,6 +141,10 @@ footer {
   flex-direction: column;
 }
 
+.container--dt {
+  display: none;
+}
+
 .no-scroll {
   overflow: hidden;
 }
@@ -562,6 +566,8 @@ h3 {
 .first__inner .first-text .first-btn {
   width: 100%;
   max-width: 31.6rem;
+  display: block;
+  text-align: center;
   font-family: "Montserrat-Regular";
   font-weight: 400;
   font-style: normal;
@@ -1812,6 +1818,10 @@ h3 {
 }
 
 @media (min-width: 1200px) {
+  .container--dt {
+    display: block;
+  }
+
   .container {
     max-width: 114rem;
   }
